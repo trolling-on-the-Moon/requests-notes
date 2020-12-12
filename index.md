@@ -32,13 +32,13 @@ for i in r.headers:
 ```
 
 - JSON:
-## SENDING JSON, note: just parameter to encode payload as json:
 ```markdown
+## SENDING JSON, note: just parameter to encode payload as json:
 payload = {"JSON_KEY" : "JSON_VALUE"}
 r = requests.post('https://httpbin.org/post', json = payload)
 # print(r.text)
 ```
-## YOU COULD ALSO DO A LONGER WAY BY ENCODING BY YOURSELF A JSON, but that means you will import json:
+YOU COULD ALSO DO A LONGER WAY BY ENCODING BY YOURSELF A JSON, but that means you will import json:
 ```markdown
 r = requests.post(url, data = json.dumps(payload))
 print(r.text)
