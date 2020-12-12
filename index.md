@@ -2,7 +2,8 @@
 ## My notes - python requests lib
 
 Installation via pip requests.
-Official documentation: [Link](https://requests.readthedocs.io/)
+
+[Official documentation](https://requests.readthedocs.io/)
 
 Important requests methods:
 1. GET
