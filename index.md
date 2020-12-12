@@ -1,5 +1,5 @@
 ![Image](https://avatars0.githubusercontent.com/u/75700504?s=460&u=2824feea3d4b0ac8dad59fc199386a2f08749994&v=4)
-## 8off notes - python requests lib
+## My notes - python requests lib
 
 Installation via pip requests.
 
