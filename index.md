@@ -20,6 +20,23 @@ r = requests.get(url)
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
 r = requests.get(url, params = payload)
 ```
+- HEAD:
+```markdown
+r = requests.head(url)
+for i in r.headers:
+   print(f'{i} : {r.headers[i]}')
+```
+
+```TEST```
+
+
+
+
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/trolling-on-the-Moon/web_one/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
