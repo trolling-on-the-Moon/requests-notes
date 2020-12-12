@@ -14,19 +14,37 @@ Important requests methods:
 import requests
 url = ''https://httpbin.org/get'
 r = requests.get(url)
+print(r.text)
 ```
 # Add payload:
 ```markdown
+# payloads by get, note ? is added automatically
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
 r = requests.get(url, params = payload)
+print(r.url)
 ```
 - HEAD:
 ```markdown
 r = requests.head(url)
 for i in r.headers:
    print(f'{i} : {r.headers[i]}')
+# print(r.headers['content-type']) # or you can use: r.headers.get('content-type')
 ```
 
+- JSON:
+## SENDING JSON, note: just parameter to encode payload as json:
+```markdown
+payload = {"JSON_KEY" : "JSON_VALUE"}
+r = requests.post('https://httpbin.org/post', json = payload)
+# print(r.text)
+```
+## YOU COULD ALSO DO A LONGER WAY BY ENCODING BY YOURSELF A JSON, but that means you will import json:
+```markdown
+r = requests.post(url, data = json.dumps(payload))
+print(r.text)
+# !!! so use option A with parameter json = some_payload !!!
+```
+### Using the json parameter in the request will change the Content-Type in the header to application/json
 
 
 
