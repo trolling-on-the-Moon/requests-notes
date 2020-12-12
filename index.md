@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+![Image](https://avatars0.githubusercontent.com/u/75700504?s=460&u=2824feea3d4b0ac8dad59fc199386a2f08749994&v=4)
+## 8off notes - python requests lib
 
 You can use the [editor on GitHub](https://github.com/trolling-on-the-Moon/web_one/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
