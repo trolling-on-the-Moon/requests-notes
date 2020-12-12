@@ -27,8 +27,6 @@ for i in r.headers:
    print(f'{i} : {r.headers[i]}')
 ```
 
-```TEST```
-
 
 
 
