@@ -9,7 +9,7 @@ Important requests methods:
 3. HEAD
 4. DELETE
 
-1. GET:
+- GET:
 ```markdown
 import requests
 url = ''https://httpbin.org/get'
