@@ -18,7 +18,7 @@ r = requests.get(url)
 # Add payload:
 ```markdown
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
-r = requests.get(url, params = payload
+r = requests.get(url, params = payload)
 ```
 You can use the [editor on GitHub](https://github.com/trolling-on-the-Moon/web_one/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
