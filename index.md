@@ -1,6 +1,25 @@
 ![Image](https://avatars0.githubusercontent.com/u/75700504?s=460&u=2824feea3d4b0ac8dad59fc199386a2f08749994&v=4)
 ## 8off notes - python requests lib
 
+Installation via pip requests.
+
+Important requests methods:
+1. GET
+2. POST
+3. HEAD
+4. DELETE
+
+1. GET:
+```markdown
+import requests
+url = ''https://httpbin.org/get'
+r = requests.get(url)
+```
+# Add payload:
+```markdown
+payload = {'nickname' : 'SlickRick', 'level' : '33'}
+r = requests.get(url, params = payload
+```
 You can use the [editor on GitHub](https://github.com/trolling-on-the-Moon/web_one/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
