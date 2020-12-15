@@ -18,12 +18,13 @@ r = requests.get(url)
 print(r.text)
 ```
 # Add payload:
-```python
+{% highlight ruby %}
+
 # payloads by get, note ? is added automatically
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
 r = requests.get(url, params = payload)
 print(r.url)
-```
+{% endhighlight %}
 {% highlight ruby %}
 print("Hellow world")
 {% endhighlight %}
