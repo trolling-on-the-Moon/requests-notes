@@ -13,7 +13,7 @@ Important requests methods:
 - GET:
 ```python
 import requests
-url = ''https://httpbin.org/get'
+url = 'https://httpbin.org/get'
 r = requests.get(url)
 print(r.text)
 ```
