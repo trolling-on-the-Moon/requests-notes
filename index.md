@@ -17,7 +17,7 @@ url = 'https://httpbin.org/get'
 r = requests.get(url)
 print(r.text)
 ```
-# Add payload:
+## Add payload:
 ```python
 # payloads by get, note ? is added automatically
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
