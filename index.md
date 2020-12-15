@@ -24,6 +24,9 @@ payload = {'nickname' : 'SlickRick', 'level' : '33'}
 r = requests.get(url, params = payload)
 print(r.url)
 ```
+{% highlight ruby %}
+print("Hellow world")
+{% endhighlight %}
 - HEAD:
 ```markdown
 r = requests.head(url)
