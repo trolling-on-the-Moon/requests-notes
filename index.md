@@ -11,25 +11,21 @@ Important requests methods:
 4. DELETE
 
 - GET:
-```markdown
+```python
 import requests
 url = ''https://httpbin.org/get'
 r = requests.get(url)
 print(r.text)
 ```
 # Add payload:
-{% highlight ruby %}
-
+```python
 # payloads by get, note ? is added automatically
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
 r = requests.get(url, params = payload)
 print(r.url)
-{% endhighlight %}
-{% highlight ruby %}
-print("Hellow world")
-{% endhighlight %}
+```
 - HEAD:
-```markdown
+```python
 r = requests.head(url)
 for i in r.headers:
    print(f'{i} : {r.headers[i]}')
@@ -37,14 +33,14 @@ for i in r.headers:
 ```
 
 - JSON:
-```markdown
+```python
 ## SENDING JSON, note: just parameter to encode payload as json:
 payload = {"JSON_KEY" : "JSON_VALUE"}
 r = requests.post('https://httpbin.org/post', json = payload)
 # print(r.text)
 ```
 YOU COULD ALSO DO A LONGER WAY BY ENCODING BY YOURSELF A JSON, but that means you will import json:
-```markdown
+```python
 r = requests.post(url, data = json.dumps(payload))
 print(r.text)
 # !!! so use option A with parameter json = some_payload !!!
@@ -52,7 +48,7 @@ print(r.text)
 ### Using the json parameter in the request will change the Content-Type in the header to application/json
 
 Displaying as a JSON, use external libs like json and pprint. Say you got status_code == 200 for certain API, and you'd like to print it as json, easy to do it with:
-```markdown
+```python
 import requests, json, pprint
 ...
 bearer_token = <YOUR_TOKEN> # replace YOUR_TOKEN including <> in string, ex: "123xczj43"
