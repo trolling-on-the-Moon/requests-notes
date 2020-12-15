@@ -18,7 +18,7 @@ r = requests.get(url)
 print(r.text)
 ```
 # Add payload:
-```markdown
+```python
 # payloads by get, note ? is added automatically
 payload = {'nickname' : 'SlickRick', 'level' : '33'}
 r = requests.get(url, params = payload)
