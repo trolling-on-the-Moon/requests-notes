@@ -48,7 +48,19 @@ print(r.text)
 ```
 ### Using the json parameter in the request will change the Content-Type in the header to application/json
 
-
+Displaying as a JSON, use external libs like json and pprint. Say you got status_code == 200 for certain API, and you'd like to print it as json, easy to do it with:
+```markdown
+import requests, json, pprint
+...
+url = 'https://api.twitter.com/2/tweets/1028039268030210048'
+r = requests.get(url, header = headers).json()     # <<<--- NOTE .json() now it is using external lib json, and below pprint
+pprint.pprint(r)
+>> OUTPUT:
+   {'data': {'id': '1028039268030210048',
+             'text': 'Do You Dip Your Pizza In Ranch?'
+             }
+   }
+```
 
 
 
