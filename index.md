@@ -52,7 +52,9 @@ Displaying as a JSON, use external libs like json and pprint. Say you got status
 ```markdown
 import requests, json, pprint
 ...
+bearer_token = <YOUR_TOKEN> # replace YOUR_TOKEN including <> in string, ex: "123xczj43"
 url = 'https://api.twitter.com/2/tweets/1028039268030210048'
+headers = {"Authorization" : f'Bearer {bearer_token}'}
 r = requests.get(url, header = headers).json()     # <<<--- NOTE .json() now it is using external lib json, and below pprint
 pprint.pprint(r)
 >> OUTPUT:
